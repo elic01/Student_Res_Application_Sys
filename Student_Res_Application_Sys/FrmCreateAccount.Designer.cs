@@ -73,6 +73,7 @@
             this.BtnLoginCreateAcc.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.BtnLoginCreateAcc.UseAccentColor = false;
             this.BtnLoginCreateAcc.UseVisualStyleBackColor = true;
+            this.BtnLoginCreateAcc.Click += new System.EventHandler(this.BtnLoginCreateAcc_Click);
             // 
             // label2
             // 

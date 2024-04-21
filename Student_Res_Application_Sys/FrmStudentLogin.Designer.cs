@@ -85,6 +85,7 @@
             this.BtnLoginStdnt.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.BtnLoginStdnt.UseAccentColor = false;
             this.BtnLoginStdnt.UseVisualStyleBackColor = true;
+            this.BtnLoginStdnt.Click += new System.EventHandler(this.BtnLoginStdnt_Click);
             // 
             // label2
             // 
