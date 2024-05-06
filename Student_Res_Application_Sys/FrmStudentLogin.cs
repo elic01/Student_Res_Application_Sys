@@ -17,7 +17,7 @@ namespace Student_Res_Application_Sys
         {
             InitializeComponent();
                    }
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ishea\source\repos\Student_Res_Application_Sys\Student_Res_Application_Sys\StudentAffairsResSystem.mdf;Integrated Security = True; Connect Timeout = 30";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ishea\Documents\db\New folder\StudentAffairsResSystem.mdf;Integrated Security = True; Connect Timeout = 30; Encrypt=False";
         private void BtnLoginStdnt_Click(object sender, EventArgs e)
         {
             string username = TxtBoxUsernameStdnt.Text;
@@ -27,11 +27,11 @@ namespace Student_Res_Application_Sys
             {
                 connection.Open();
 
-                string query = "SELECT COUNT(*) FROM student WHERE username = @Username AND password = @Password";
+                string query = "SELECT COUNT(*) FROM student_users WHERE username = @username AND password = @password";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@Username", username);
-                    command.Parameters.AddWithValue("@Password", password);
+                    command.Parameters.AddWithValue("@username", username);
+                    command.Parameters.AddWithValue("@password", password);
                     int count = (int)command.ExecuteScalar();
 
                     if (count > 0)

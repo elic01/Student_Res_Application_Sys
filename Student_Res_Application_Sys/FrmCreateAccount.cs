@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,7 +19,7 @@ namespace Student_Res_Application_Sys
         {
             InitializeComponent();
         }
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\StudentAffairsResSystem.mdf;Integrated Security=True;Connect Timeout=30";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ishea\Documents\db\New folder\StudentAffairsResSystem.mdf;Integrated Security = True; Connect Timeout = 30; Encrypt=False";
 
         private void BtnLoginCreateAcc_Click(object sender, EventArgs e)
         {
@@ -35,8 +36,8 @@ namespace Student_Res_Application_Sys
                     sqlCon.Open();
                     SqlCommand sqlCmd = new SqlCommand("UserAdd", sqlCon);
                     sqlCmd.CommandType = CommandType.StoredProcedure;
-                    sqlCmd.Parameters.AddWithValue("@Username", TxtBoxUsernameCreateAcc.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@Password", TxtBoxPassCreateAcc.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@username", TxtBoxUsernameCreateAcc.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@password", TxtBoxPassCreateAcc.Text.Trim());
                     sqlCmd.ExecuteNonQuery();
                     MessageBox.Show("Account created successfully,  GO TO STUDENT LOGIN!");
                     TxtBoxUsernameCreateAcc.Clear();

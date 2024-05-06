@@ -17,7 +17,7 @@ namespace Student_Res_Application_Sys
         {
             InitializeComponent();
         }
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\StudentAffairsResSystem.mdf;Integrated Security=True;Connect Timeout=30";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ishea\Documents\db\New folder\StudentAffairsResSystem.mdf;Integrated Security = True; Connect Timeout = 30; Encrypt=False";
         private void BtnLoginAdmin_Click(object sender, EventArgs e)
         {
             string username = TxtBoxUsernameAdmin.Text;
@@ -32,10 +32,10 @@ namespace Student_Res_Application_Sys
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT * FROM Admin WHERE Username = @Username AND Password = @Password";
+                    string query = "SELECT * FROM admin_users WHERE username = @username AND password = @password";
                     SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@Username", username);
-                    command.Parameters.AddWithValue("@Password", password);
+                    command.Parameters.AddWithValue("@username", username);
+                    command.Parameters.AddWithValue("@password", password);
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
