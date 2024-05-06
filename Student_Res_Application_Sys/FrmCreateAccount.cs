@@ -25,6 +25,7 @@ namespace Student_Res_Application_Sys
         {
             string username = TxtBoxUsernameCreateAcc.Text;
             string password = TxtBoxPassCreateAcc.Text;
+
             if (username == "" || password == "")
             {
                 MessageBox.Show("Please enter a username and password");
@@ -34,17 +35,28 @@ namespace Student_Res_Application_Sys
                 using (SqlConnection sqlCon = new SqlConnection(connectionString))
                 {
                     sqlCon.Open();
-                    SqlCommand sqlCmd = new SqlCommand("UserAdd", sqlCon);
-                    sqlCmd.CommandType = CommandType.StoredProcedure;
-                    sqlCmd.Parameters.AddWithValue("@username", TxtBoxUsernameCreateAcc.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@password", TxtBoxPassCreateAcc.Text.Trim());
-                    sqlCmd.ExecuteNonQuery();
-                    MessageBox.Show("Account created successfully,  GO TO STUDENT LOGIN!");
-                    TxtBoxUsernameCreateAcc.Clear();
-                    TxtBoxPassCreateAcc.Clear();
 
+               
+                    string insertQuery = @"INSERT INTO student_users (username, password) VALUES (@username, @password)";
+                    SqlCommand insertCmd = new SqlCommand(insertQuery, sqlCon);
+                    insertCmd.Parameters.AddWithValue("@username", username);
+                    insertCmd.Parameters.AddWithValue("@password", password);
+
+                    int rowsAffected = insertCmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Account created successfully, GO TO STUDENT LOGIN!");
+                        TxtBoxUsernameCreateAcc.Clear();
+                        TxtBoxPassCreateAcc.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to create account. Please contact the administrator.");
+                    }
                 }
             }
         }
+        
     }
 }
