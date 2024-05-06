@@ -17,7 +17,7 @@ namespace Student_Res_Application_Sys
         {
             InitializeComponent();
         }
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\StudentAffairsResSystem.mdf;Integrated Security=True;Connect Timeout=30";
+        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\StudentAffairsResSystem.mdf;Integrated Security=True;Connect Timeout=30";
         private void BtnLoginAdmin_Click(object sender, EventArgs e)
         {
             string username = TxtBoxUsernameAdmin.Text;
