@@ -232,13 +232,6 @@
     <None Include="Resources\building1.png" />
     <None Include="Resources\settings-sliders.png" />
     <None Include="Resources\edit.png" />
-    <Content Include="StudentAffairsResSystem.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="StudentAffairsResSystem_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>StudentAffairsResSystem.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
