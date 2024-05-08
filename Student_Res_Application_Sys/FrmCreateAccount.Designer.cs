@@ -30,8 +30,6 @@
         {
             this.panel1CreateAcc = new System.Windows.Forms.Panel();
             this.BtnLoginCreateAcc = new ReaLTaiizor.Controls.MaterialButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.ToggleShowPassCreateAcc = new ReaLTaiizor.Controls.ToggleEdit();
             this.TxtBoxPassCreateAcc = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             this.TxtBoxUsernameCreateAcc = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,8 +40,6 @@
             // 
             this.panel1CreateAcc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1CreateAcc.Controls.Add(this.BtnLoginCreateAcc);
-            this.panel1CreateAcc.Controls.Add(this.label2);
-            this.panel1CreateAcc.Controls.Add(this.ToggleShowPassCreateAcc);
             this.panel1CreateAcc.Controls.Add(this.TxtBoxPassCreateAcc);
             this.panel1CreateAcc.Controls.Add(this.TxtBoxUsernameCreateAcc);
             this.panel1CreateAcc.Controls.Add(this.label1);
@@ -68,32 +64,12 @@
             this.BtnLoginCreateAcc.NoAccentTextColor = System.Drawing.Color.Empty;
             this.BtnLoginCreateAcc.Size = new System.Drawing.Size(140, 50);
             this.BtnLoginCreateAcc.TabIndex = 5;
-            this.BtnLoginCreateAcc.Text = "Login";
+            this.BtnLoginCreateAcc.Text = "Create Acc";
             this.BtnLoginCreateAcc.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.BtnLoginCreateAcc.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.BtnLoginCreateAcc.UseAccentColor = false;
             this.BtnLoginCreateAcc.UseVisualStyleBackColor = true;
             this.BtnLoginCreateAcc.Click += new System.EventHandler(this.BtnLoginCreateAcc_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 204);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Show Password";
-            // 
-            // ToggleShowPassCreateAcc
-            // 
-            this.ToggleShowPassCreateAcc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ToggleShowPassCreateAcc.Location = new System.Drawing.Point(14, 204);
-            this.ToggleShowPassCreateAcc.Name = "ToggleShowPassCreateAcc";
-            this.ToggleShowPassCreateAcc.Size = new System.Drawing.Size(41, 23);
-            this.ToggleShowPassCreateAcc.TabIndex = 3;
-            this.ToggleShowPassCreateAcc.Text = "toggleEdit1";
-            this.ToggleShowPassCreateAcc.Toggled = false;
-            this.ToggleShowPassCreateAcc.Type = ReaLTaiizor.Controls.ToggleEdit._Type.YesNo;
             // 
             // TxtBoxPassCreateAcc
             // 
@@ -187,8 +163,6 @@
 
         private System.Windows.Forms.Panel panel1CreateAcc;
         private ReaLTaiizor.Controls.MaterialButton BtnLoginCreateAcc;
-        private System.Windows.Forms.Label label2;
-        private ReaLTaiizor.Controls.ToggleEdit ToggleShowPassCreateAcc;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit TxtBoxPassCreateAcc;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit TxtBoxUsernameCreateAcc;
         private System.Windows.Forms.Label label1;

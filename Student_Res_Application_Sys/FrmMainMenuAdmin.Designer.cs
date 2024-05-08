@@ -32,8 +32,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.materialButton3 = new ReaLTaiizor.Controls.MaterialButton();
-            this.materialButton2 = new ReaLTaiizor.Controls.MaterialButton();
+            this.BtnSettings = new ReaLTaiizor.Controls.MaterialButton();
+            this.BtnAccomodationDetails = new ReaLTaiizor.Controls.MaterialButton();
             this.BtnStudentDetails = new ReaLTaiizor.Controls.MaterialButton();
             this.BtnLogout = new ReaLTaiizor.Controls.MaterialButton();
             this.label2 = new System.Windows.Forms.Label();
@@ -96,49 +96,51 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // materialButton3
+            // BtnSettings
             // 
-            this.materialButton3.AutoSize = false;
-            this.materialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton3.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton3.Depth = 0;
-            this.materialButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialButton3.HighEmphasis = true;
-            this.materialButton3.Icon = global::Student_Res_Application_Sys.Properties.Resources.settings_7_512;
-            this.materialButton3.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton3.Location = new System.Drawing.Point(600, 231);
-            this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialButton3.Name = "materialButton3";
-            this.materialButton3.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton3.Size = new System.Drawing.Size(206, 114);
-            this.materialButton3.TabIndex = 4;
-            this.materialButton3.Text = "Settings";
-            this.materialButton3.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton3.UseAccentColor = false;
-            this.materialButton3.UseVisualStyleBackColor = true;
+            this.BtnSettings.AutoSize = false;
+            this.BtnSettings.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnSettings.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.BtnSettings.Depth = 0;
+            this.BtnSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSettings.HighEmphasis = true;
+            this.BtnSettings.Icon = global::Student_Res_Application_Sys.Properties.Resources.settings_7_512;
+            this.BtnSettings.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.BtnSettings.Location = new System.Drawing.Point(600, 231);
+            this.BtnSettings.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnSettings.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.BtnSettings.Name = "BtnSettings";
+            this.BtnSettings.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.BtnSettings.Size = new System.Drawing.Size(206, 114);
+            this.BtnSettings.TabIndex = 4;
+            this.BtnSettings.Text = "Settings";
+            this.BtnSettings.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.BtnSettings.UseAccentColor = false;
+            this.BtnSettings.UseVisualStyleBackColor = true;
+            this.BtnSettings.Click += new System.EventHandler(this.materialButton3_Click);
             // 
-            // materialButton2
+            // BtnAccomodationDetails
             // 
-            this.materialButton2.AutoSize = false;
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialButton2.HighEmphasis = true;
-            this.materialButton2.Icon = global::Student_Res_Application_Sys.Properties.Resources.building;
-            this.materialButton2.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton2.Location = new System.Drawing.Point(324, 231);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton2.Size = new System.Drawing.Size(206, 114);
-            this.materialButton2.TabIndex = 3;
-            this.materialButton2.Text = "Accomodation Details";
-            this.materialButton2.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton2.UseAccentColor = false;
-            this.materialButton2.UseVisualStyleBackColor = true;
+            this.BtnAccomodationDetails.AutoSize = false;
+            this.BtnAccomodationDetails.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnAccomodationDetails.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.BtnAccomodationDetails.Depth = 0;
+            this.BtnAccomodationDetails.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAccomodationDetails.HighEmphasis = true;
+            this.BtnAccomodationDetails.Icon = global::Student_Res_Application_Sys.Properties.Resources.building;
+            this.BtnAccomodationDetails.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.BtnAccomodationDetails.Location = new System.Drawing.Point(324, 231);
+            this.BtnAccomodationDetails.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnAccomodationDetails.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.BtnAccomodationDetails.Name = "BtnAccomodationDetails";
+            this.BtnAccomodationDetails.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.BtnAccomodationDetails.Size = new System.Drawing.Size(206, 114);
+            this.BtnAccomodationDetails.TabIndex = 3;
+            this.BtnAccomodationDetails.Text = "Accomodation Details";
+            this.BtnAccomodationDetails.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.BtnAccomodationDetails.UseAccentColor = false;
+            this.BtnAccomodationDetails.UseVisualStyleBackColor = true;
+            this.BtnAccomodationDetails.Click += new System.EventHandler(this.materialButton2_Click);
             // 
             // BtnStudentDetails
             // 
@@ -161,6 +163,7 @@
             this.BtnStudentDetails.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.BtnStudentDetails.UseAccentColor = false;
             this.BtnStudentDetails.UseVisualStyleBackColor = true;
+            this.BtnStudentDetails.Click += new System.EventHandler(this.BtnStudentDetails_Click);
             // 
             // BtnLogout
             // 
@@ -183,6 +186,7 @@
             this.BtnLogout.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.BtnLogout.UseAccentColor = false;
             this.BtnLogout.UseVisualStyleBackColor = true;
+            this.BtnLogout.Click += new System.EventHandler(this.BtnLogout_Click);
             // 
             // label2
             // 
@@ -201,8 +205,8 @@
             this.ClientSize = new System.Drawing.Size(895, 575);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnLogout);
-            this.Controls.Add(this.materialButton3);
-            this.Controls.Add(this.materialButton2);
+            this.Controls.Add(this.BtnSettings);
+            this.Controls.Add(this.BtnAccomodationDetails);
             this.Controls.Add(this.BtnStudentDetails);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -224,8 +228,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private ReaLTaiizor.Controls.MaterialButton BtnStudentDetails;
-        private ReaLTaiizor.Controls.MaterialButton materialButton2;
-        private ReaLTaiizor.Controls.MaterialButton materialButton3;
+        private ReaLTaiizor.Controls.MaterialButton BtnAccomodationDetails;
+        private ReaLTaiizor.Controls.MaterialButton BtnSettings;
         private ReaLTaiizor.Controls.MaterialButton BtnLogout;
         private System.Windows.Forms.Label label2;
     }

@@ -30,8 +30,6 @@
         {
             this.panel1Admin = new System.Windows.Forms.Panel();
             this.BtnLoginAdmin = new ReaLTaiizor.Controls.MaterialButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.ToggleShowPassAdmin = new ReaLTaiizor.Controls.ToggleEdit();
             this.TxtBoxPassAdmin = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             this.TxtBoxUsernameAdmin = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,8 +40,6 @@
             // 
             this.panel1Admin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1Admin.Controls.Add(this.BtnLoginAdmin);
-            this.panel1Admin.Controls.Add(this.label2);
-            this.panel1Admin.Controls.Add(this.ToggleShowPassAdmin);
             this.panel1Admin.Controls.Add(this.TxtBoxPassAdmin);
             this.panel1Admin.Controls.Add(this.TxtBoxUsernameAdmin);
             this.panel1Admin.Controls.Add(this.label1);
@@ -74,27 +70,6 @@
             this.BtnLoginAdmin.UseAccentColor = false;
             this.BtnLoginAdmin.UseVisualStyleBackColor = true;
             this.BtnLoginAdmin.Click += new System.EventHandler(this.BtnLoginAdmin_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 204);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Show Password";
-            // 
-            // ToggleShowPassAdmin
-            // 
-            this.ToggleShowPassAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ToggleShowPassAdmin.Location = new System.Drawing.Point(14, 204);
-            this.ToggleShowPassAdmin.Name = "ToggleShowPassAdmin";
-            this.ToggleShowPassAdmin.Size = new System.Drawing.Size(41, 23);
-            this.ToggleShowPassAdmin.TabIndex = 3;
-            this.ToggleShowPassAdmin.Text = "toggleEdit1";
-            this.ToggleShowPassAdmin.Toggled = false;
-            this.ToggleShowPassAdmin.Type = ReaLTaiizor.Controls.ToggleEdit._Type.YesNo;
-            this.ToggleShowPassAdmin.ToggledChanged += new ReaLTaiizor.Controls.ToggleEdit.ToggledChangedEventHandler(this.ToggleShowPassAdmin_ToggledChanged);
             // 
             // TxtBoxPassAdmin
             // 
@@ -189,8 +164,6 @@
 
         private System.Windows.Forms.Panel panel1Admin;
         private ReaLTaiizor.Controls.MaterialButton BtnLoginAdmin;
-        private System.Windows.Forms.Label label2;
-        private ReaLTaiizor.Controls.ToggleEdit ToggleShowPassAdmin;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit TxtBoxPassAdmin;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit TxtBoxUsernameAdmin;
         private System.Windows.Forms.Label label1;

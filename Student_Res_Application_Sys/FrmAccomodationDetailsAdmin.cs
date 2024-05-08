@@ -28,8 +28,15 @@ namespace Student_Res_Application_Sys
         private void FrmAccomodationDetailsAdmin_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'studentAffairsResSystemDataSet.students' table. You can move, or remove it, as needed.
-            this.studentsTableAdapter.Fill(this.studentAffairsResSystemDataSet.students);
+            //this.studentsTableAdapter.Fill(this.studentAffairsResSystemDataSet.students);
 
+        }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FrmMainMenuAdmin frmMainMenuAdmin = new FrmMainMenuAdmin();
+            frmMainMenuAdmin.Show();
         }
     }
 }

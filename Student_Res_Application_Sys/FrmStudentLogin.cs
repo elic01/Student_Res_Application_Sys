@@ -38,18 +38,24 @@ namespace Student_Res_Application_Sys
                     {
                         MessageBox.Show("Login Successful");
                         this.Hide();
+                        FrmWelcomeDash frmWelcomeDash = new FrmWelcomeDash();
+                        frmWelcomeDash.Hide();
                         FrmStudentDetails studentDetails = new FrmStudentDetails();
                         studentDetails.Show();
                     }
 
                     else
                     {
-                        // Authentication failed
                         MessageBox.Show("Invalid username or password");
                     }
                 }
             }
         
+        }
+
+        private void LinkLblForgotPassStdnt_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show("PLEASE CONTACT THE ADMINSTRATOR FOR MORE DETAILS. THANK YOU");
         }
     }
 }

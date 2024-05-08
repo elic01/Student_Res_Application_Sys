@@ -30,5 +30,20 @@ namespace Student_Res_Application_Sys
             this.tableAdapterManager.UpdateAll(this.studentAffairsResSystemDataSet);
 
         }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmWelcomeDash frmWelcomeDash = new FrmWelcomeDash();
+            frmWelcomeDash.Show();
+        }
+
+        private void materialButton3_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.studentsBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.studentAffairsResSystemDataSet);
+
+        }
     }
 }

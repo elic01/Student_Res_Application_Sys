@@ -31,8 +31,6 @@
             this.panel1Stdnt = new System.Windows.Forms.Panel();
             this.LinkLblForgotPassStdnt = new System.Windows.Forms.LinkLabel();
             this.BtnLoginStdnt = new ReaLTaiizor.Controls.MaterialButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.ToggleShowPassStdnt = new ReaLTaiizor.Controls.ToggleEdit();
             this.TxtBoxPassStdnt = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             this.TxtBoxUsernameStdnt = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,8 +42,6 @@
             this.panel1Stdnt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1Stdnt.Controls.Add(this.LinkLblForgotPassStdnt);
             this.panel1Stdnt.Controls.Add(this.BtnLoginStdnt);
-            this.panel1Stdnt.Controls.Add(this.label2);
-            this.panel1Stdnt.Controls.Add(this.ToggleShowPassStdnt);
             this.panel1Stdnt.Controls.Add(this.TxtBoxPassStdnt);
             this.panel1Stdnt.Controls.Add(this.TxtBoxUsernameStdnt);
             this.panel1Stdnt.Controls.Add(this.label1);
@@ -63,6 +59,7 @@
             this.LinkLblForgotPassStdnt.TabIndex = 6;
             this.LinkLblForgotPassStdnt.TabStop = true;
             this.LinkLblForgotPassStdnt.Text = "Forgot Password";
+            this.LinkLblForgotPassStdnt.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLblForgotPassStdnt_LinkClicked);
             // 
             // BtnLoginStdnt
             // 
@@ -86,26 +83,6 @@
             this.BtnLoginStdnt.UseAccentColor = false;
             this.BtnLoginStdnt.UseVisualStyleBackColor = true;
             this.BtnLoginStdnt.Click += new System.EventHandler(this.BtnLoginStdnt_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 201);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Show Password";
-            // 
-            // ToggleShowPassStdnt
-            // 
-            this.ToggleShowPassStdnt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ToggleShowPassStdnt.Location = new System.Drawing.Point(14, 201);
-            this.ToggleShowPassStdnt.Name = "ToggleShowPassStdnt";
-            this.ToggleShowPassStdnt.Size = new System.Drawing.Size(41, 23);
-            this.ToggleShowPassStdnt.TabIndex = 3;
-            this.ToggleShowPassStdnt.Text = "toggleEdit1";
-            this.ToggleShowPassStdnt.Toggled = false;
-            this.ToggleShowPassStdnt.Type = ReaLTaiizor.Controls.ToggleEdit._Type.YesNo;
             // 
             // TxtBoxPassStdnt
             // 
@@ -201,8 +178,6 @@
         private ReaLTaiizor.Controls.MaterialTextBoxEdit TxtBoxUsernameStdnt;
         private System.Windows.Forms.Label label1;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit TxtBoxPassStdnt;
-        private System.Windows.Forms.Label label2;
-        private ReaLTaiizor.Controls.ToggleEdit ToggleShowPassStdnt;
         private ReaLTaiizor.Controls.MaterialButton BtnLoginStdnt;
         private System.Windows.Forms.LinkLabel LinkLblForgotPassStdnt;
     }

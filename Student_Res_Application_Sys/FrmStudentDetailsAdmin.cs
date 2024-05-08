@@ -17,6 +17,14 @@ namespace Student_Res_Application_Sys
             InitializeComponent();
         }
 
+        private void FrmStudentDetailsAdmin_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'studentAffairsResSystemDataSet.students' table. You can move, or remove it, as needed.
+            //this.studentsTableAdapter.Fill(this.studentAffairsResSystemDataSet.students);
+
+
+        }
+
         private void studentsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -25,11 +33,11 @@ namespace Student_Res_Application_Sys
 
         }
 
-        private void FrmStudentDetailsAdmin_Load(object sender, EventArgs e)
+        private void materialButton1_Click(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'studentAffairsResSystemDataSet.students' table. You can move, or remove it, as needed.
-            this.studentsTableAdapter.Fill(this.studentAffairsResSystemDataSet.students);
-
+            this.Close();
+            FrmMainMenuAdmin frmMainMenuAdmin = new FrmMainMenuAdmin();
+            frmMainMenuAdmin.Show();
         }
     }
 }

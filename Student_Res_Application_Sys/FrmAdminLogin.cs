@@ -40,9 +40,10 @@ namespace Student_Res_Application_Sys
                     if (reader.HasRows)
                     {
                         MessageBox.Show("Login Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        this.Hide();
                         FrmMainMenuAdmin mainMenuAdmin = new FrmMainMenuAdmin();
                         mainMenuAdmin.Show();
-                        this.Hide();
                     }
                     else
                     {
@@ -54,7 +55,7 @@ namespace Student_Res_Application_Sys
 
         private void ToggleShowPassAdmin_ToggledChanged()
         {
-            
+           
         }
 
         private void FrmAdminLogin_Load(object sender, EventArgs e)
